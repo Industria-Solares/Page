@@ -1,40 +1,47 @@
 <template>
-    <v-label>Verfügbare Fläche</v-label>
-    <v-row>
-        <v-col cols="6">
-            <v-text-field label="Breite" variant="outlined"></v-text-field>
-        </v-col>
-        <v-col cols="6">
-            <v-text-field label="Höhe" variant="outlined"></v-text-field>
-        </v-col>
-    </v-row>
-    <v-label>Modul Fläche</v-label>
-    <v-row>
-        <v-col cols="6">
-            <v-text-field label="Breite" variant="outlined"></v-text-field>
-        </v-col>
-        <v-col cols="6">
-            <v-text-field label="Höhe" variant="outlined"></v-text-field>
-        </v-col>
-    </v-row>
-    <v-label>Modul Leistung (kWh/Jahr)</v-label>
-    <v-row>
-        <v-col cols="6">
-            <v-text-field label="Leistung (kWh/Jahr)" variant="outlined"></v-text-field>
-        </v-col>
-    </v-row>
-
-
-
-    <v-btn @click="onClick" variant="outlined">Erhöhe</v-btn>
-    <p>Zähler: {{ count }}</p>
+        <v-label>Verfügbare Fläche</v-label>
+        <v-row>
+            <v-col cols="6">
+                <v-text-field v-model="formData.availableLenght" type="number" label="Länge" variant="outlined"></v-text-field>
+            </v-col>
+            <v-col cols="6">
+                <v-text-field type="number" label="Breite" variant="outlined"></v-text-field>
+            </v-col>
+        </v-row>
+        <v-label>Modul Fläche</v-label>
+        <v-row>
+            <v-col cols="6">
+                <v-text-field type="number" label="Länge" variant="outlined"></v-text-field>
+            </v-col>
+            <v-col cols="6">
+                <v-text-field type="number" label="Breite" variant="outlined"></v-text-field>
+            </v-col>
+        </v-row>
+        <v-label>Modul Leistung (kWh/Jahr)</v-label>
+        <v-row>
+            <v-col cols="6">
+                <v-text-field type="number" label="Leistung (kWh/Jahr)" variant="outlined"></v-text-field>
+            </v-col>
+            <v-col cols="6">
+                <v-text-field type="number" label="Mögliche Gesammtleistung" variant="outlined" readonly="true"></v-text-field>
+            </v-col>
+        </v-row>
+        <v-btn @click="calculate" variant="outlined">Berechnen</v-btn>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const count = ref<number>(0)
-const onClick = ():void => {
-    count.value++
+<script setup lang="js">
+export default {
+    name: 'Calculator',
+    props: {
+      formData: {
+        type: Object,
+        default: () => ({})
+      }
+    },
+    methods: {
+      calculate() {
+        console.log(this.formData)
+      }
+    },
 }
 </script>
