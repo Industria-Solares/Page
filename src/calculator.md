@@ -5,6 +5,5 @@ description: "Kalkulator"
 ---
 # Kalkulator
 
-## hier klicken:
-
+## Kalkulator
 <calculator />

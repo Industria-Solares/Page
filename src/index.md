@@ -4,3 +4,6 @@ title: "Home"
 description: "Home"
 ---
 # Home Page
+
+## Kalkulator:
+[Kalkulator](/calculator)

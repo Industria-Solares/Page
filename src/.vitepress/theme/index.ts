@@ -9,7 +9,6 @@ import Calculator from '../components/Calculator.vue'
 
 export default {
   ...Theme,
-
   enhanceApp({ app }) {
     app.use(vuetify)
     app.component('calculator', Calculator)
