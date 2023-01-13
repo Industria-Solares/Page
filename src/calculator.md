@@ -4,3 +4,5 @@ title: "Kalkulator"
 description: "Kalkulator"
 ---
 # Kalkulator
+
+<calculator />
