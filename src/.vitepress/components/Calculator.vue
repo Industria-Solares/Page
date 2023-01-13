@@ -1,5 +1,5 @@
 <template>
-    <button @click="onClick">Increase</button>
+    <v-btn @click="onClick" variant="outlined">Increase</v-btn>
     <p>Count: {{ count }}</p>
 </template>
 
