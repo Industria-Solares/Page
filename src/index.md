@@ -26,7 +26,7 @@ Interessieren Sie sich für die Vorteile einer Solaranlage und möchten von gün
 Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitieren auch Sie von günstigen Energiekosten durch unsere fachkundige Beratung und Unterstützung.
 
 
-## Idustria Solares
+## Industria Solares
 
 <p>Industria-Solares bietet Ihnen eine komplette Lösung für Solaranlagen. Wir setzen auf hochwertige und langlebige PV-Module, die nicht nur zur Energieeffizienz beitragen, sondern auch einen großen Beitrag leisten, die CO2-Belastung durch fossile Energieträger zu reduzieren.</p>
 <br />
@@ -40,4 +40,9 @@ Entscheiden Sie sich für Vertrauen, Zuverlässigkeit und erneuerbare Energien u
 
 ## Kalkulator
 <br />
-<v-btn href="/page/calculator" :style="{left: '50%', transform:'translateX(-50%)'}">Kalkulator</v-btn>
+<v-btn
+    href="/page/calculator"
+    :style="{left: '50%', transform:'translateX(-50%)'}"
+    variant="outlined">
+    Kalkulator
+</v-btn>
