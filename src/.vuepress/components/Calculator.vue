@@ -2,39 +2,51 @@
   <v-label>Verfügbare Fläche</v-label>
   <v-row>
     <v-col cols="6">
-    <v-text-field v-model="availableLenght" @input="calculate" type="number" label="Länge" variant="outlined"></v-text-field>
+      <v-text-field v-model="availableLenght" @input="calculate" type="number" label="Länge" variant="outlined">
+      </v-text-field>
     </v-col>
     <v-col cols="6">
-        <v-text-field v-model="availableWidth" @input="calculate" type="number" label="Breite" variant="outlined"></v-text-field>
+      <v-text-field v-model="availableWidth" @input="calculate" type="number" label="Breite" variant="outlined">
+      </v-text-field>
     </v-col>
   </v-row>
   <v-label>Modul Fläche</v-label>
   <v-row>
     <v-col cols="6">
-      <v-text-field v-model="moduleLenght" @input="calculate" type="number" label="Länge" variant="outlined"></v-text-field>
+      <v-text-field v-model="moduleLenght" @input="calculate" type="number" label="Länge" variant="outlined">
+      </v-text-field>
     </v-col>
     <v-col cols="6">
-      <v-text-field v-model="moduleWidth" @input="calculate" type="number" label="Breite" variant="outlined"></v-text-field>
+      <v-text-field v-model="moduleWidth" @input="calculate" type="number" label="Breite" variant="outlined">
+      </v-text-field>
     </v-col>
   </v-row>
   <v-label>Modul Leistung (kWh/Jahr)</v-label>
   <v-row>
     <v-col cols="4">
-      <v-text-field v-model="maxModulePower" @input="calculate" type="number" label="Leistung (kWh/Jahr)" variant="outlined"></v-text-field>
+      <v-text-field v-model="maxModulePower" @input="calculate" type="number" label="Leistung (kWh/Jahr)"
+        variant="outlined">
+      </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="maxModuleCount" type="number" label="Mögliche Modulanzahl" variant="outlined" :readonly="true"></v-text-field>
+      <v-text-field v-model="maxModuleCount" type="number" label="Mögliche Modulanzahl" variant="outlined"
+        :readonly="true">
+      </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="maxTotalPower" type="number" label="Mögliche Gesammtleistung" variant="outlined" :readonly="true"></v-text-field>
+      <v-text-field v-model="maxTotalPower" type="number" label="Mögliche Gesammtleistung" variant="outlined"
+        :readonly="true">
+      </v-text-field>
     </v-col>
   </v-row>
   <v-row>
     <v-col cols="6">
-      <v-select v-model="moduleAlignment" @update:modelValue="calculate" label="Ausrichtung" :hint="`${moduleAlignment.text}`" :items="alignmentOptions" item-title="text" item-value="value" persistent-hint return-object signle-line></v-select>
+      <v-select v-model="moduleAlignment" @update:modelValue="calculate" label="Ausrichtung" :items="alignmentOptions"
+        item-title="text" item-value="value" persistent-hint return-object signle-line></v-select>
     </v-col>
     <v-col cols="6">
-      <v-text-field v-model="maxTotalHarvest" type="number" label="Möglicher Ertrag" variant="outlined" :readonly="true"></v-text-field>
+      <v-text-field v-model="maxTotalHarvest" type="number" label="Möglicher Ertrag" variant="outlined"
+        :readonly="true"></v-text-field>
     </v-col>
   </v-row>
 </template>
@@ -91,7 +103,7 @@ export default {
       this.maxModulePower = this.maxModulePower < 0 ? 0 : this.maxModulePower
     }
   },
- 
+
   watch: {
     availableLenght: 'validate',
     availableWidth: 'validate',
