@@ -96,7 +96,7 @@ export default {
       maxModulePower: 0,
       maxModuleCount: 0,
       maxTotalPower: 0,
-      moduleAlignment: { text: 'Süd', value: 1.0 },
+      moduleAlignment: 1.0,
       maxHarvestPerYear: 0,
       currentPrice: 0,
       maxYieldPerYear: 0,
@@ -130,8 +130,8 @@ export default {
       let maxModuleCountHorizontal = Math.floor(this.availableLenght / this.moduleLenght) * Math.floor(this.availableWidth / this.moduleWidth)
       let maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
       this.maxModuleCount = Math.max(maxModuleCountHorizontal, maxModuleCountVertical)
-      this.maxTotalPower = this.maxModuleCount * this.maxModulePower
-      this.maxHarvestPerYear = this.maxTotalPower * this.moduleAlignment * 1650 / 1000
+      this.maxTotalPower = this.maxModuleCount * this.maxModulePower * this.moduleAlignment
+      this.maxHarvestPerYear = this.maxTotalPower * 1650 / 1000
       this.maxYieldPerYear = this.maxHarvestPerYear * this.currentPrice
       this.timeTillROI = this.totalCost / this.maxYieldPerYear
       this.maxTotalYield = this.maxYieldPerYear * (this.moduleLifetime - this.timeTillROI)
