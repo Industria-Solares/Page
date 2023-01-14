@@ -2,40 +2,40 @@
   <v-label>Verfügbare Fläche</v-label>
   <v-row>
     <v-col cols="6">
-      <v-text-field v-model="availableLenght" @input="calculate" type="number" label="Länge" variant="outlined">
+      <v-text-field v-model="availableLenght" @input="calculate" type="number" label="Länge" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="6">
-      <v-text-field v-model="availableWidth" @input="calculate" type="number" label="Breite" variant="outlined">
+      <v-text-field v-model="availableWidth" @input="calculate" type="number" label="Breite" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
   </v-row>
   <v-label>Modul Fläche</v-label>
   <v-row>
     <v-col cols="6">
-      <v-text-field v-model="moduleLenght" @input="calculate" type="number" label="Länge" variant="outlined">
+      <v-text-field v-model="moduleLenght" @input="calculate" type="number" label="Länge" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="6">
-      <v-text-field v-model="moduleWidth" @input="calculate" type="number" label="Breite" variant="outlined">
+      <v-text-field v-model="moduleWidth" @input="calculate" type="number" label="Breite" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
   </v-row>
-  <v-label>Modul Leistung (kWh/Jahr)</v-label>
+  <v-label>Modul Leistung (Watt)</v-label>
   <v-row>
     <v-col cols="4">
       <v-text-field v-model="maxModulePower" @input="calculate" type="number" label="Leistung"
-        variant="outlined">
+        variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="4">
       <v-text-field v-model="maxModuleCount" type="number" label="Mögliche Modulanzahl" variant="outlined"
-        :readonly="true">
+        :readonly="true" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="maxTotalPower" type="number" label="Mögliche Gesammtleistung" variant="outlined"
-        :readonly="true">
+      <v-text-field v-model="maxTotalPower" type="number" label="Mögliche Gesammtleistung (Watt)" variant="outlined"
+        :readonly="true" hide-spin-buttons>
       </v-text-field>
     </v-col>
   </v-row>
@@ -45,39 +45,39 @@
         item-title="text" item-value="value" signle-line></v-select>
     </v-col>
     <v-col cols="6">
-      <v-text-field v-model="maxHarvestPerYear" type="number" label="Möglicher Ertrag" variant="outlined"
-        :readonly="true"></v-text-field>
+      <v-text-field v-model="maxHarvestPerYear" type="number" label="Möglicher Ertrag (kWh/Jahr)" variant="outlined"
+        :readonly="true" hide-spin-buttons></v-text-field>
     </v-col>
   </v-row>
   <v-label>Strompreis (€/kWh)</v-label>
   <v-row>
     <v-col cols="4">
-      <v-text-field v-model="currentPrice" @input="calculate" type="number" label="Aktuell" variant="outlined">
+      <v-text-field v-model="currentPrice" @input="calculate" type="number" label="Aktuell" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="4">
       <v-text-field v-model="maxYieldPerYear" type="number" label="Möglicher jährlicher Gewinn" variant="outlined"
-        :readonly="true">
+        :readonly="true" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="totalCost" @input="calculate" type="number" label="Gesammtkosten" variant="outlined">
+      <v-text-field v-model="totalCost" @input="calculate" type="number" label="Gesammtkosten" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
   </v-row>
   <v-row>
     <v-col cols="4">
       <v-text-field v-model="timeTillROI" type="number" label="Zeit bis zur Amortisation"
-        variant="outlined" :readonly="true">
+        variant="outlined" :readonly="true" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="moduleLifetime" @input="calculate" type="number" label="Lebenszeit der Module" variant="outlined">
+      <v-text-field v-model="moduleLifetime" @input="calculate" type="number" label="Lebenszeit der Module" variant="outlined" hide-spin-buttons>
       </v-text-field>
     </v-col>
     <v-col cols="4">
       <v-text-field v-model="maxTotalYield" type="number" label="Mögliche gesammter Gewinn" variant="outlined"
-        :readonly="true">
+        :readonly="true" hide-spin-buttons>
       </v-text-field>
     </v-col>
   </v-row>
@@ -131,7 +131,7 @@ export default {
       let maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
       this.maxModuleCount = Math.max(maxModuleCountHorizontal, maxModuleCountVertical)
       this.maxTotalPower = this.maxModuleCount * this.maxModulePower
-      this.maxHarvestPerYear = this.maxTotalPower * this.moduleAlignment
+      this.maxHarvestPerYear = this.maxTotalPower * this.moduleAlignment * 1650 / 1000
       this.maxYieldPerYear = this.maxHarvestPerYear * this.currentPrice
       this.timeTillROI = this.totalCost / this.maxYieldPerYear
       this.maxTotalYield = this.maxYieldPerYear * (this.moduleLifetime - this.timeTillROI)
