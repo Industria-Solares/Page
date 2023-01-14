@@ -32,11 +32,10 @@ Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitiere
 <br />
 <p>Unser Team von erfahrenen Mitarbeitern unterstützt Sie von Anfang an, vom ersten Beratungsgespräch bis hin zur Montage Ihrer Anlage. Wir bieten Ihnen flexible Finanzierungsmöglichkeiten für Ihre Solaranlage, darunter Attraktive Ratenzahlungsmodelle, Leasing oder Kauf. So können Sie die für Sie am besten geeignete Option auswählen und Ihre Solaranlage in Ihr Budget integrieren.
 Wir garantieren Ihnen eine sichere und zuverlässige Umsetzung Ihres Projekts welches wir passend zu Ihren Bedürfnissen und Wünschen umsetzen.</p>
-
-Unser Service beinhaltet nicht nur eine Professionelle Beratung und die Montage Ihrer Anlage, sondern auch eine umfassende Wartung, um die Lebensdauer und Leistung Ihrer Solaranlage zu maximieren. So können Sie sicher sein, dass Sie lange Freude an den Vorteilen Ihrer Anlage haben werden.
-
-Entscheiden Sie sich für Vertrauen, Zuverlässigkeit und erneuerbare Energien und wählen Sie Industria-Solares als Ihren Partner für Ihre Solaranlage. Profitieren Sie von unserem Angebot an Dienstleistungen und Produkten und erleben Sie den Vorteil einer Solaranlage mit unserer Unterstützung.
-
+<br />
+<p>Unser Service beinhaltet nicht nur eine Professionelle Beratung und die Montage Ihrer Anlage, sondern auch eine umfassende Wartung, um die Lebensdauer und Leistung Ihrer Solaranlage zu maximieren. So können Sie sicher sein, dass Sie lange Freude an den Vorteilen Ihrer Anlage haben werden.</p>
+<br />
+<p>Entscheiden Sie sich für Vertrauen, Zuverlässigkeit und erneuerbare Energien und wählen Sie Industria-Solares als Ihren Partner für Ihre Solaranlage. Profitieren Sie von unserem Angebot an Dienstleistungen und Produkten und erleben Sie den Vorteil einer Solaranlage mit unserer Unterstützung.</p>
 
 ## Kalkulator
 <br />
