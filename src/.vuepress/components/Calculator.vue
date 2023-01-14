@@ -31,7 +31,7 @@
         </v-row>
 </template>
 
-<script setup lang="js">
+<script lang="ts">
 export default {
     name: 'Calculator',
     data() {
@@ -48,9 +48,9 @@ export default {
 
     methods: {
       calculate() {
-        let maxModuleCountHorizontal = (this.availableLenght / this.moduleLenght) * (this.availableWidth / this.moduleWidth)
-        let maxModuleCountVertical = (this.availableLenght / this.moduleWidth) * (this.availableWidth / this.moduleLenght)
-        this.maxModuleCount = Math.floor(Math.max(maxModuleCountHorizontal, maxModuleCountVertical))
+        let maxModuleCountHorizontal = Math.floor(this.availableLenght / this.moduleLenght) * Math.floor(this.availableWidth / this.moduleWidth)
+        let maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
+        this.maxModuleCount = Math.max(maxModuleCountHorizontal, maxModuleCountVertical)
         this.maxTotalPower = this.maxModuleCount * this.maxModulePower
       },
       validate() {
