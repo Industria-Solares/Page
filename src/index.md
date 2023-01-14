@@ -6,4 +6,4 @@ description: "Home"
 # Home Page
 
 ## Kalkulator:
-[Kalkulator](/calculator)
+[Kalkulator](/page/calculator)
