@@ -5,5 +5,4 @@ description: "Home"
 ---
 # Home Page
 
-## Kalkulator:
 [Kalkulator](/page/calculator)

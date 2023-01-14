@@ -24,7 +24,7 @@
   <v-label>Modul Leistung (kWh/Jahr)</v-label>
   <v-row>
     <v-col cols="4">
-      <v-text-field v-model="maxModulePower" @input="calculate" type="number" label="Leistung (kWh/Jahr)"
+      <v-text-field v-model="maxModulePower" @input="calculate" type="number" label="Leistung"
         variant="outlined">
       </v-text-field>
     </v-col>
@@ -42,11 +42,43 @@
   <v-row>
     <v-col cols="6">
       <v-select v-model="moduleAlignment" @update:modelValue="calculate" label="Ausrichtung" :items="alignmentOptions"
-        item-title="text" item-value="value" persistent-hint return-object signle-line></v-select>
+        item-title="text" item-value="value" signle-line></v-select>
     </v-col>
     <v-col cols="6">
-      <v-text-field v-model="maxTotalHarvest" type="number" label="Möglicher Ertrag" variant="outlined"
+      <v-text-field v-model="maxHarvestPerYear" type="number" label="Möglicher Ertrag" variant="outlined"
         :readonly="true"></v-text-field>
+    </v-col>
+  </v-row>
+  <v-label>Strompreis (€/kWh)</v-label>
+  <v-row>
+    <v-col cols="4">
+      <v-text-field v-model="currentPrice" @input="calculate" type="number" label="Aktuell" variant="outlined">
+      </v-text-field>
+    </v-col>
+    <v-col cols="4">
+      <v-text-field v-model="maxYieldPerYear" type="number" label="Möglicher jährlicher Gewinn" variant="outlined"
+        :readonly="true">
+      </v-text-field>
+    </v-col>
+    <v-col cols="4">
+      <v-text-field v-model="totalCost" @input="calculate" type="number" label="Gesammtkosten" variant="outlined">
+      </v-text-field>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col cols="4">
+      <v-text-field v-model="timeTillROI" type="number" label="Zeit bis zur Amortisation"
+        variant="outlined" :readonly="true">
+      </v-text-field>
+    </v-col>
+    <v-col cols="4">
+      <v-text-field v-model="moduleLifetime" @input="calculate" type="number" label="Lebenszeit der Module" variant="outlined">
+      </v-text-field>
+    </v-col>
+    <v-col cols="4">
+      <v-text-field v-model="maxTotalYield" type="number" label="Mögliche gesammter Gewinn" variant="outlined"
+        :readonly="true">
+      </v-text-field>
     </v-col>
   </v-row>
 </template>
@@ -65,7 +97,13 @@ export default {
       maxModuleCount: 0,
       maxTotalPower: 0,
       moduleAlignment: { text: 'Süd', value: 1.0 },
-      maxTotalHarvest: 0,
+      maxHarvestPerYear: 0,
+      currentPrice: 0,
+      maxYieldPerYear: 0,
+      totalCost: 0,
+      timeTillROI: 0,
+      moduleLifetime: 0,
+      maxTotalYield: 0,
       alignmentOptions: [
         { text: 'Nord', value: 0.2 },
         { text: 'Nord-Nord-Ost', value: 0.3 },
@@ -93,7 +131,10 @@ export default {
       let maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
       this.maxModuleCount = Math.max(maxModuleCountHorizontal, maxModuleCountVertical)
       this.maxTotalPower = this.maxModuleCount * this.maxModulePower
-      this.maxTotalHarvest = this.maxTotalPower * this.moduleAlignment.value
+      this.maxHarvestPerYear = this.maxTotalPower * this.moduleAlignment
+      this.maxYieldPerYear = this.maxHarvestPerYear * this.currentPrice
+      this.timeTillROI = this.totalCost / this.maxYieldPerYear
+      this.maxTotalYield = this.maxYieldPerYear * (this.moduleLifetime - this.timeTillROI)
     },
     validate() {
       this.availableLenght = this.availableLenght < 0 ? 0 : this.availableLenght

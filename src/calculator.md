@@ -5,5 +5,4 @@ description: "Kalkulator"
 ---
 # Kalkulator
 
-## Kalkulator
 <calculator />
