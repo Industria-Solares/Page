@@ -20,10 +20,10 @@ description: "Home"
 
 ## Solaranlagen
 
-Sie interessieren sich für Solar, sind jedoch unschlüssig, welche Art der Finanzierung und welche Komponenten die richtigen für Sie sind? Keine Sorge, wir beraten Sie objektiv und bedarfsorientiert bezüglich der Vorzüge beim Kauf und Leasing und bieten Ihnen eine komplette Lösung von der Beratung, Planung bis zur Installation und Wartung. Als zuverlässiger Solar-Anbieter stehen wir Ihnen jederzeit zur Seite. Entdecken Sie jetzt die Solar-Lösung, die perfekt zu Ihnen passt.
-
-Interessieren Sie sich für die Vorteile einer Solaranlage und möchten von günstigen Energiekosten profitieren? Unsere fachkundigen Berater unterstützen Sie bei der Auswahl der passenden PV-Komponenten und beantworten all Ihre Fragen rund um die Photovoltaik. Von der ersten Anfrage bis zur Installation und Wartung sind Sie bei uns in den besten Händen.
-Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitieren auch Sie von günstigen Energiekosten durch unsere fachkundige Beratung und Unterstützung.
+<p>Sie interessieren sich für Solar, sind jedoch unschlüssig, welche Art der Finanzierung und welche Komponenten die richtigen für Sie sind? Keine Sorge, wir beraten Sie objektiv und bedarfsorientiert bezüglich der Vorzüge beim Kauf und Leasing und bieten Ihnen eine komplette Lösung von der Beratung, Planung bis zur Installation und Wartung. Als zuverlässiger Solar-Anbieter stehen wir Ihnen jederzeit zur Seite. Entdecken Sie jetzt die Solar-Lösung, die perfekt zu Ihnen passt.</p>
+<br />
+<p>Interessieren Sie sich für die Vorteile einer Solaranlage und möchten von günstigen Energiekosten profitieren? Unsere fachkundigen Berater unterstützen Sie bei der Auswahl der passenden PV-Komponenten und beantworten all Ihre Fragen rund um die Photovoltaik. Von der ersten Anfrage bis zur Installation und Wartung sind Sie bei uns in den besten Händen.
+Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitieren auch Sie von günstigen Energiekosten durch unsere fachkundige Beratung und Unterstützung.</p>
 
 
 ## Industria Solares
