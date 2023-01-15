@@ -23,25 +23,36 @@
   </v-row>
   <v-label>Modul Leistung</v-label>
   <v-row>
-    <v-col cols="4">
+    <v-col cols="6">
       <v-text-field v-model="maxModulePower" :rules="numberRules" @input="calculate" type="number" label="Leistung pro Modul (Watt)" variant="outlined">
       </v-text-field>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="6">
       <v-text-field v-model="maxModuleCount" type="number" label="Mögliche Modulanzahl" variant="outlined"
         :readonly="true">
       </v-text-field>
     </v-col>
+  </v-row>
+  <v-row>
     <v-col cols="4">
-      <v-text-field v-model="maxTotalPower" type="number" label="Mögliche Gesammtleistung (Watt)" variant="outlined"
+      <v-select v-model="moduleAlignment" @update:modelValue="calculate" label="Ausrichtung" :items="alignmentOptions"
+        item-title="text" item-value="value" signle-line></v-select>
+    </v-col>
+    <v-col cols="4">
+      <v-text-field v-model="moduleAngle" :rules="angelRules" @input="calculate" type="number" label="Neigungswinkel" variant="outlined">
+      </v-text-field>
+    </v-col>
+    <v-col cols="4">
+      <v-text-field v-model="moduleEfficiency" :rules="numberRules" @input="calculate" type="number" label="Effizienz" variant="outlined"
         :readonly="true">
       </v-text-field>
     </v-col>
   </v-row>
   <v-row>
     <v-col cols="6">
-      <v-select v-model="moduleAlignment" @update:modelValue="calculate" label="Ausrichtung" :items="alignmentOptions"
-        item-title="text" item-value="value" signle-line></v-select>
+      <v-text-field v-model="maxTotalPower" type="number" label="Mögliche Gesammtleistung (Watt)" variant="outlined"
+        :readonly="true">
+      </v-text-field>
     </v-col>
     <v-col cols="6">
       <v-text-field v-model="maxHarvestPerYear" type="number" label="Möglicher Ertrag (kWh/Jahr)" variant="outlined"
@@ -104,38 +115,50 @@ export default defineComponent({
       timeTillROI: ref(0),
       moduleLifetime: ref(0),
       maxTotalYield: ref(0),
-      moduleAlignment: ref(1.0),
+      moduleAlignment: ref(0),
+      moduleAngle: ref(0),
+      moduleEfficiency: ref(0),
       alignmentOptions: [
-        { text: 'Nord', value: 0.2 },
-        { text: 'Nord-Nord-Ost', value: 0.3 },
-        { text: 'Nord-Ost', value: 0.4 },
-        { text: 'Ost-Nord-Ost', value: 0.5 },
-        { text: 'Ost', value: 0.6 },
-        { text: 'Ost-Süd-Ost', value: 0.7 },
-        { text: 'Süd-Ost', value: 0.8 },
-        { text: 'Süd-Süd-Ost', value: 0.9 },
-        { text: 'Süd', value: 1.0 },
-        { text: 'Süd-Süd-West', value: 0.9 },
-        { text: 'Süd-West', value: 0.8 },
-        { text: 'West-Süd-West', value: 0.7 },
-        { text: 'West', value: 0.6 },
-        { text: 'West-Nord-West', value: 0.5 },
-        { text: 'Nord-West', value: 0.4 },
-        { text: 'Nord-Nord-West', value: 0.3 },
+        { text: 'Nord', value: 180 },
+        { text: 'Nord-Nord-Ost', value: 160 },
+        { text: 'Nord-Ost', value: 135 },
+        { text: 'Ost-Nord-Ost', value: 115 },
+        { text: 'Ost', value: 90 },
+        { text: 'Ost-Süd-Ost', value: 70 },
+        { text: 'Süd-Ost', value: 45 },
+        { text: 'Süd-Süd-Ost', value: 25 },
+        { text: 'Süd', value: 0 },
+        { text: 'Süd-Süd-West', value: 25 },
+        { text: 'Süd-West', value: 45 },
+        { text: 'West-Süd-West', value: 70 },
+        { text: 'West', value: 90 },
+        { text: 'West-Nord-West', value: 115 },
+        { text: 'Nord-West', value: 135 },
+        { text: 'Nord-Nord-West', value: 160 },
       ],
       numberRules: [
         (v: number) => !!v || 'Dieses Feld ist erforderlich',
         (v: number) => v > 0 || 'Dieses Feld muss größer als 0 sein',
+      ],
+      angelRules: [
+        (v: number) => !!v || 'Dieses Feld ist erforderlich',
+        (v: number) => v >= 0 || 'Dieses Feld muss größer oder gleich 0 sein',
+        (v: number) => v <= 90 || 'Dieses Feld muss kleiner oder gleich 90 sein',
+        (v: number) => v % 5 === 0 || 'Dieses Feld muss durch 5 teilbar sein',
       ],
     }
   },
 
   methods: {
     calculate() {
-      let maxModuleCountHorizontal = Math.floor(this.availableLenght / this.moduleLenght) * Math.floor(this.availableWidth / this.moduleWidth)
-      let maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
+      const maxModuleCountHorizontal = Math.floor(this.availableLenght / this.moduleLenght) * Math.floor(this.availableWidth / this.moduleWidth)
+      const maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
       this.maxModuleCount = Math.max(maxModuleCountHorizontal, maxModuleCountVertical)
-      this.maxTotalPower = Math.floor(this.maxModuleCount * this.maxModulePower * this.moduleAlignment * 100) / 100
+      const alignmentIndex = Math.floor(this.moduleAlignment / 5)
+      const angleIndex = Math.floor(this.moduleAngle / 5)
+      this.moduleEfficiency = efficiencyMatrix[alignmentIndex][angleIndex]
+      console.log(alignmentIndex, angleIndex, this.moduleEfficiency)
+      this.maxTotalPower = Math.floor(this.maxModuleCount * this.maxModulePower * (this.moduleEfficiency / 100) * 100) / 100
       this.maxHarvestPerYear = Math.floor(this.maxTotalPower * 1650 / 1000 * 100) / 100
       this.maxYieldPerYear = Math.floor(this.maxHarvestPerYear * this.currentPrice * 100) / 100
       this.timeTillROI = Math.floor(this.totalCost / this.maxYieldPerYear * 100) / 100
