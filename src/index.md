@@ -37,7 +37,9 @@ Wir garantieren Ihnen eine sichere und zuverlässige Umsetzung Ihres Projekts we
 <br />
 <p>Entscheiden Sie sich für Vertrauen, Zuverlässigkeit und erneuerbare Energien und wählen Sie Industria-Solares als Ihren Partner für Ihre Solaranlage. Profitieren Sie von unserem Angebot an Dienstleistungen und Produkten und erleben Sie den Vorteil einer Solaranlage mit unserer Unterstützung.</p>
 
+
 ## Kalkulator
+
 <br />
 <v-btn
     href="/page/calculator"
