@@ -39,9 +39,10 @@ Wir garantieren Ihnen eine sichere und zuverlässige Umsetzung Ihres Projekts we
 
 
 ## Kalkulator
-<p>Hier Kommen Sie zu unserem Solar-Effizienzkalkulator.</p>
 
+<p>Hier Kommen Sie zu unserem Solar-Effizienzkalkulator.</p>
 <br />
+
 <v-btn
     href="/page/calculator"
     :style="{left: '50%', transform:'translateX(-50%)'}"
