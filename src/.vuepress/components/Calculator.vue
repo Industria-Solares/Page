@@ -157,7 +157,6 @@ export default defineComponent({
       const alignmentIndex = Math.floor(this.moduleAlignment / 5)
       const angleIndex = Math.floor(this.moduleAngle / 5)
       this.moduleEfficiency = efficiencyMatrix[alignmentIndex][angleIndex]
-      console.log(alignmentIndex, angleIndex, this.moduleEfficiency)
       this.maxTotalPower = Math.floor(this.maxModuleCount * this.maxModulePower * (this.moduleEfficiency / 100) * 100) / 100
       this.maxHarvestPerYear = Math.floor(this.maxTotalPower * 1650 / 1000 * 100) / 100
       this.maxYieldPerYear = Math.floor(this.maxHarvestPerYear * this.currentPrice * 100) / 100
