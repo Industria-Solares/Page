@@ -85,6 +85,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
+import efficiencyMatrix from './efficiency'
 
 export default defineComponent({
   setup() {
