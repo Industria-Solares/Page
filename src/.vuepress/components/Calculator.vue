@@ -55,7 +55,7 @@
       </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="maxYieldPerYear" type="number" label="Möglicher jährlicher Gewinn (€)" variant="outlined"
+      <v-text-field v-model="maxYieldPerYear" type="number" label="Möglicher Gewinn (€/Jahr)" variant="outlined"
         :readonly="true">
       </v-text-field>
     </v-col>
@@ -76,7 +76,7 @@
       </v-text-field>
     </v-col>
     <v-col cols="4">
-      <v-text-field v-model="maxTotalYield" type="number" label="Mögliche gesammter Gewinn (€)" variant="outlined"
+      <v-text-field v-model="maxTotalYield" type="number" label="Mögliche Nettogewinn (€)" variant="outlined"
         :readonly="true">
       </v-text-field>
     </v-col>
@@ -84,26 +84,26 @@
 </template>
 
 <script lang="ts">
-export default {
-  name: 'Calculator',
+import { defineComponent, ref } from 'vue'
 
-  data() {
+export default defineComponent({
+  setup() {
     return {
-      availableLenght: 0,
-      availableWidth: 0,
-      moduleLenght: 0,
-      moduleWidth: 0,
-      maxModulePower: 0,
-      maxModuleCount: 0,
-      maxTotalPower: 0,
-      maxHarvestPerYear: 0,
-      currentPrice: 0,
-      maxYieldPerYear: 0,
-      totalCost: 0,
-      timeTillROI: 0,
-      moduleLifetime: 0,
-      maxTotalYield: 0,
-      moduleAlignment: 1.0,
+      availableLenght: ref(0),
+      availableWidth: ref(0),
+      moduleLenght: ref(0),
+      moduleWidth: ref(0),
+      maxModulePower: ref(0),
+      maxModuleCount: ref(0),
+      maxTotalPower: ref(0),
+      maxHarvestPerYear: ref(0),
+      currentPrice: ref(0),
+      maxYieldPerYear: ref(0),
+      totalCost: ref(0),
+      timeTillROI: ref(0),
+      moduleLifetime: ref(0),
+      maxTotalYield: ref(0),
+      moduleAlignment: ref(1.0),
       alignmentOptions: [
         { text: 'Nord', value: 0.2 },
         { text: 'Nord-Nord-Ost', value: 0.3 },
@@ -141,5 +141,6 @@ export default {
       this.maxTotalYield = Math.floor(this.maxYieldPerYear * (this.moduleLifetime - this.timeTillROI) * 100) / 100
     }
   },
-}
+})
+
 </script>
