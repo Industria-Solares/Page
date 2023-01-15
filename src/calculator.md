@@ -6,7 +6,7 @@ description: "Kalkulator"
 # Kalkulator
 
 <p>
-Unser Solar-Effizienzkalkulator berechnet die Leistung Ihrer Anlage in kWh/Jahr anhand der verfügbaren Grundfläche, Modulgröße, Dachausrichtung und Standort. Geben Sie die Daten ein, um Ihre erwartete jährliche Energieproduktion und die damit verbundenen Einsparungen durch Ihre Potenzielle Anlage zu ermitteln. Ermitteln Sie die Effizienz Ihrer Anlage jetzt mit unserem Kalkulator.</p>
+Unser Solar-Effizienzkalkulator ermöglicht es Ihnen, die Leistung Ihrer Anlage anhand Ihrer zu Verfügung stehenden Grundfläche, Modulgröße, Dachausrichtung und Ihres Standorts zu berechnen. Geben Sie Ihre individuellen Daten ein, um die erwartete jährliche Energieproduktion und die damit verbundenen Einsparungen durch Solarenergie zu erfahren . Weiterhin können Sie so auch Ihre mögliche Co2-Einsparung einsehen.</p>
 <br />
 
 <calculator />
