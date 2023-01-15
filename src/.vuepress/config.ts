@@ -1,5 +1,5 @@
-import { defineUserConfig } from 'vuepress'
-import { viteBundler } from 'vuepress'
+import { defineUserConfig, defaultTheme, viteBundler } from 'vuepress'
+import {  } from 'vuepress'
 
 export default defineUserConfig({
   lang: 'de-DE',
@@ -13,4 +13,10 @@ export default defineUserConfig({
       }
     }
   }),
+  theme: defaultTheme({
+    navbar: [
+      { text: 'Home', link: '/' },
+      { text: 'Kalkulator', link: '/calculator/' },
+    ],
+  })
 })
