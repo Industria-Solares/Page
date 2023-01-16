@@ -129,20 +129,20 @@ export default defineComponent({
       alignmentOptions: [
         { text: 'Nord', value: 180 },
         { text: 'Nord-Nord-Ost', value: 160 },
-        { text: 'Nord-Ost', value: 140 },
+        { text: 'Nord-Ost', value: 135 },
         { text: 'Ost-Nord-Ost', value: 115 },
-        { text: 'Ost', value: 95 },
+        { text: 'Ost', value: 90 },
         { text: 'Ost-Süd-Ost', value: 70 },
-        { text: 'Süd-Ost', value: 50 },
+        { text: 'Süd-Ost', value: 45 },
         { text: 'Süd-Süd-Ost', value: 25 },
         { text: 'Süd', value: 0 },
-        { text: 'Süd-Süd-West', value: 30 },
-        { text: 'Süd-West', value: 45 },
-        { text: 'West-Süd-West', value: 75 },
-        { text: 'West', value: 90 },
-        { text: 'West-Nord-West', value: 120 },
-        { text: 'Nord-West', value: 135 },
-        { text: 'Nord-Nord-West', value: 165 },
+        { text: 'Süd-Süd-West', value: -25 },
+        { text: 'Süd-West', value: -45 },
+        { text: 'West-Süd-West', value: -70 },
+        { text: 'West', value: -90 },
+        { text: 'West-Nord-West', value: -115 },
+        { text: 'Nord-West', value: -135 },
+        { text: 'Nord-Nord-West', value: -160 },
       ],
       numberRules: [
         (v: number) => !!v || 'Dieses Feld ist erforderlich',
@@ -161,7 +161,7 @@ export default defineComponent({
       const maxModuleCountHorizontal = Math.floor(this.availableLenght / this.moduleLenght) * Math.floor(this.availableWidth / this.moduleWidth)
       const maxModuleCountVertical = Math.floor(this.availableLenght / this.moduleWidth) * Math.floor(this.availableWidth / this.moduleLenght)
       this.maxModuleCount = Math.max(maxModuleCountHorizontal, maxModuleCountVertical)
-      const alignmentIndex = Math.floor(this.moduleAlignment / 5)
+      const alignmentIndex = Math.floor(Math.abs(this.moduleAlignment) / 5)
       const angleIndex = Math.floor(this.moduleAngle / 5)
       this.moduleEfficiency = efficiencyMatrix[alignmentIndex][angleIndex]
       this.maxTotalPower = Math.floor(this.maxModuleCount * this.maxModulePower * (this.moduleEfficiency / 100) * 100) / 100
