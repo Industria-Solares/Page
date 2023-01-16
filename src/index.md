@@ -5,7 +5,7 @@ description: "Home"
 ---
 # Industria Solares
 
-## CO&sup2 Wechsel zur Solarenergie - Beende den CO2 Ausstoß jetzt;
+## Auch du kannst zur Solarenergie wechseln - Beende den CO2 Ausstoß jetzt;
 
 Der Ausstoß von CO2 ist eines der größten Umweltprobleme, mit denen die Welt heute konfrontiert ist. Eine wichtige Quelle für CO2-Emissionen ist die Erzeugung von Strom aus fossilen Brennstoffen wie Kohle, Öl und Gas. Eine Lösung für dieses Problem ist die Umstellung auf erneuerbare Energien, wie zum Beispiel Solarenergie.
 
