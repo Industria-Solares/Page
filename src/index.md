@@ -3,7 +3,7 @@ lang: "de-DE"
 title: "Home"
 description: "Home"
 ---
-<img> ![photo1673619512](https://user-images.githubusercontent.com/122641002/212748315-fd931ab7-ab70-4644-8853-b5beea37b18c.jpeg)
+<img> ![Industria-Solares Logo](https://user-images.githubusercontent.com/122641002/212765739-0c624a75-7b22-44aa-9072-65d591acc66c.png)
 
 # Willkommen bei Industria Solares
 
