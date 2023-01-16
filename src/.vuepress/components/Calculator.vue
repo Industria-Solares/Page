@@ -2,29 +2,34 @@
   <v-label>Verfügbare Fläche</v-label>
   <v-row>
     <v-col cols="6" xs="12">
-      <v-text-field v-model="availableLenght" :rules="numberRules" @input="calculate" type="number" label="Länge" variant="outlined">
+      <v-text-field v-model="availableLenght" :rules="numberRules" @input="calculate" type="number" label="Länge"
+        variant="outlined">
       </v-text-field>
     </v-col>
     <v-col cols="6" xs="12">
-      <v-text-field v-model="availableWidth" :rules="numberRules" @input="calculate" type="number" label="Breite" variant="outlined">
+      <v-text-field v-model="availableWidth" :rules="numberRules" @input="calculate" type="number" label="Breite"
+        variant="outlined">
       </v-text-field>
     </v-col>
   </v-row>
   <v-label>Modul Fläche</v-label>
   <v-row>
     <v-col cols="6" xs="12">
-      <v-text-field v-model="moduleLenght" :rules="numberRules" @input="calculate" type="number" label="Länge" variant="outlined">
+      <v-text-field v-model="moduleLenght" :rules="numberRules" @input="calculate" type="number" label="Länge"
+        variant="outlined">
       </v-text-field>
     </v-col>
     <v-col cols="6" xs="12">
-      <v-text-field v-model="moduleWidth" :rules="numberRules" @input="calculate" type="number" label="Breite" variant="outlined">
+      <v-text-field v-model="moduleWidth" :rules="numberRules" @input="calculate" type="number" label="Breite"
+        variant="outlined">
       </v-text-field>
     </v-col>
   </v-row>
   <v-label>Modul Leistung</v-label>
   <v-row>
     <v-col cols="6" xs="12">
-      <v-text-field v-model="maxModulePower" :rules="numberRules" @input="calculate" type="number" label="Leistung pro Modul (Watt)" variant="outlined">
+      <v-text-field v-model="maxModulePower" :rules="numberRules" @input="calculate" type="number"
+        label="Leistung pro Modul (Watt)" variant="outlined">
       </v-text-field>
     </v-col>
     <v-col cols="6" xs="12">
@@ -39,12 +44,13 @@
         item-title="text" item-value="value" signle-line></v-select>
     </v-col>
     <v-col cols="4" xs="12">
-      <v-text-field v-model="moduleAngle" :rules="angelRules" @input="calculate" type="number" label="Neigungswinkel" variant="outlined">
+      <v-text-field v-model="moduleAngle" :rules="angelRules" @input="calculate" type="number" label="Neigungswinkel"
+        variant="outlined">
       </v-text-field>
     </v-col>
     <v-col cols="4" xs="12">
-      <v-text-field v-model="moduleEfficiency" :rules="numberRules" @input="calculate" type="number" label="Effizienz" variant="outlined"
-        :readonly="true">
+      <v-text-field v-model="moduleEfficiency" :rules="numberRules" @input="calculate" type="number" label="Effizienz"
+        variant="outlined" :readonly="true">
       </v-text-field>
     </v-col>
   </v-row>
@@ -62,7 +68,8 @@
   <v-label>Strompreis</v-label>
   <v-row>
     <v-col cols="4" xs="12">
-      <v-text-field v-model="currentPrice" :rules="numberRules" @input="calculate" type="number" label="Aktueller Preis (€/kWh)" variant="outlined">
+      <v-text-field v-model="currentPrice" :rules="numberRules" @input="calculate" type="number"
+        label="Aktueller Preis (€/kWh)" variant="outlined">
       </v-text-field>
     </v-col>
     <v-col cols="4" xs="12">
@@ -71,7 +78,8 @@
       </v-text-field>
     </v-col>
     <v-col cols="4" xs="12">
-      <v-text-field v-model="totalCost" :rules="numberRules" @input="calculate" type="number" label="Gesammtkosten der Anlage (€)" variant="outlined">
+      <v-text-field v-model="totalCost" :rules="numberRules" @input="calculate" type="number"
+        label="Gesammtkosten der Anlage (€)" variant="outlined">
       </v-text-field>
     </v-col>
   </v-row>
@@ -82,8 +90,8 @@
       </v-text-field>
     </v-col>
     <v-col cols="4" xs="12">
-      <v-text-field v-model="moduleLifetime" :rules="numberRules" @input="calculate" type="number" label="Lebenszeit der Module (Jahre)"
-        variant="outlined">
+      <v-text-field v-model="moduleLifetime" :rules="numberRules" @input="calculate" type="number"
+        label="Lebenszeit der Module (Jahre)" variant="outlined">
       </v-text-field>
     </v-col>
     <v-col cols="4" xs="12">
@@ -144,7 +152,6 @@ export default defineComponent({
         (v: number) => !!v || 'Dieses Feld ist erforderlich',
         (v: number) => v >= 0 || 'Dieses Feld muss größer oder gleich 0 sein',
         (v: number) => v <= 90 || 'Dieses Feld muss kleiner oder gleich 90 sein',
-        (v: number) => v % 5 === 0 || 'Dieses Feld muss durch 5 teilbar sein',
       ],
     }
   },

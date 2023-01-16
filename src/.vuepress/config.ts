@@ -1,5 +1,4 @@
 import { defineUserConfig, defaultTheme, viteBundler } from 'vuepress'
-import {  } from 'vuepress'
 
 export default defineUserConfig({
   lang: 'de-DE',
