@@ -3,6 +3,8 @@ lang: "de-DE"
 title: "Home"
 description: "Home"
 ---
+<img> ![photo1673619512](https://user-images.githubusercontent.com/122641002/212748315-fd931ab7-ab70-4644-8853-b5beea37b18c.jpeg)
+
 # Industria Solares
 
 ## Auch du kannst zu Solarenergie wechseln - Beende den CO2 Ausstoß jetzt
