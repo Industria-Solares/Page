@@ -7,7 +7,7 @@ description: "Home"
 
 # Willkommen bei Industria Solares
 
-## Auch du kannst zu Solarenergie wechseln - Beende den CO2 Ausstoß jetzt
+## Solarenergie - der Weg zu einer CO2-neutralen Zukunft
 
 Der Ausstoß von CO2 ist eines der größten Umweltprobleme, mit denen die Welt heute konfrontiert ist. Eine wichtige Quelle für CO2-Emissionen ist die Erzeugung von Strom aus fossilen Brennstoffen wie Kohle, Öl und Gas. Eine Lösung für dieses Problem ist die Umstellung auf erneuerbare Energien, wie zum Beispiel Solarenergie.
 
