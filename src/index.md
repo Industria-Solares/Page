@@ -23,7 +23,7 @@ In den letzten Jahren hat sich die Technologie für Solarenergie stark verbesser
 
 
 
-## Solaranlagen - Lösung der Zukunft
+## Solaranlagen - Ihr persönlicher Energieversorger
 
 Sie interessieren sich für Solar, sind jedoch unschlüssig, welche Art der Finanzierung und welche Komponenten die richtigen für Sie sind? Keine Sorge, wir beraten Sie objektiv und bedarfsorientiert bezüglich der Vorzüge beim Kauf und Leasing und bieten Ihnen eine komplette Lösung von der Beratung, Planung bis zur Installation und Wartung. Als zuverlässiger Solar-Anbieter stehen wir Ihnen jederzeit zur Seite. Entdecken Sie jetzt die Solar-Lösung, die perfekt zu Ihnen passt.
 
@@ -32,7 +32,7 @@ Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitiere
 
 <img> ![Bild Solaranlage ](https://user-images.githubusercontent.com/122641002/212969755-24398d32-5106-4d9b-abdb-241f0abdc042.png)
 
-## Industria Solares
+## Industria Solares - zusammen in die Zukunft
 
 Industria-Solares bietet Ihnen eine komplette Lösung für Solaranlagen. Wir setzen auf hochwertige und langlebige PV-Module, die nicht nur zur Energieeffizienz beitragen, sondern auch einen großen Beitrag leisten, die CO2-Belastung durch fossile Energieträger zu reduzieren.
 
