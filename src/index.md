@@ -27,6 +27,7 @@ Sie interessieren sich für Solar, sind jedoch unschlüssig, welche Art der Fina
 Interessieren Sie sich für die Vorteile einer Solaranlage und möchten von günstigen Energiekosten profitieren? Unsere fachkundigen Berater unterstützen Sie bei der Auswahl der passenden PV-Komponenten und beantworten all Ihre Fragen rund um die Photovoltaik. Von der ersten Anfrage bis zur Installation und Wartung sind Sie bei uns in den besten Händen.
 Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitieren auch Sie von günstigen Energiekosten durch unsere fachkundige Beratung und Unterstützung.
 
+<img> ![Bild Solaranlage ](https://user-images.githubusercontent.com/122641002/212969755-24398d32-5106-4d9b-abdb-241f0abdc042.png)
 
 ## Industria Solares
 
