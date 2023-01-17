@@ -23,7 +23,7 @@ In den letzten Jahren hat sich die Technologie für Solarenergie stark verbesser
 
 
 
-## Solaranlagen - Ihr persönlicher Energieversorger
+## Solaranlagen - Ihre persönliche Energieversorgung
 
 Sie interessieren sich für Solar, sind jedoch unschlüssig, welche Art der Finanzierung und welche Komponenten die richtigen für Sie sind? Keine Sorge, wir beraten Sie objektiv und bedarfsorientiert bezüglich der Vorzüge beim Kauf und Leasing und bieten Ihnen eine komplette Lösung von der Beratung, Planung bis zur Installation und Wartung. Als zuverlässiger Solar-Anbieter stehen wir Ihnen jederzeit zur Seite. Entdecken Sie jetzt die Solar-Lösung, die perfekt zu Ihnen passt.
 
