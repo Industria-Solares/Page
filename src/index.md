@@ -5,6 +5,7 @@ description: "Home"
 ---
 <img> ![Industria-Solares Logo](https://user-images.githubusercontent.com/122641002/212765739-0c624a75-7b22-44aa-9072-65d591acc66c.png)
 
+
 # Willkommen bei Industria Solares
 
 ## Solarenergie - der Weg in eine CO2-neutrale Zukunft
@@ -22,7 +23,6 @@ In den letzten Jahren hat sich die Technologie für Solarenergie stark verbesser
 <img> ![Nein zu CO2](https://user-images.githubusercontent.com/122641002/212973458-93b134b3-5010-4724-8a3e-260ca7e9b25b.png)
 
 
-
 ## Solaranlagen - Ihre persönliche Energieversorgung
 
 Sie interessieren sich für Solar, sind jedoch unschlüssig, welche Art der Finanzierung und welche Komponenten die richtigen für Sie sind? Keine Sorge, wir beraten Sie objektiv und bedarfsorientiert bezüglich der Vorzüge beim Kauf und Leasing und bieten Ihnen eine komplette Lösung von der Beratung, Planung bis zur Installation und Wartung. Als zuverlässiger Solar-Anbieter stehen wir Ihnen jederzeit zur Seite. Entdecken Sie jetzt die Solar-Lösung, die perfekt zu Ihnen passt.
@@ -31,6 +31,7 @@ Interessieren Sie sich für die Vorteile einer Solaranlage und möchten von gün
 Eine Solaranlage für Ihr Zuhause ohne eigene Kosten und ohne Risiko. Profitieren auch Sie von günstigen Energiekosten durch unsere fachkundige Beratung und Unterstützung.
 
 <img> ![Bild Solaranlage ](https://user-images.githubusercontent.com/122641002/212969755-24398d32-5106-4d9b-abdb-241f0abdc042.png)
+
 
 ## Industria Solares - zusammen in die Zukunft
 
