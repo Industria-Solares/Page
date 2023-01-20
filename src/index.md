@@ -22,7 +22,7 @@ Der Ausstoß von CO2 ist eines der größten Umweltprobleme, mit denen die Welt 
 
 In den letzten Jahren hat sich die Technologie für Solarenergie stark verbessert und die Kosten für die Installation von Solaranlagen sind gesunken. Eine wichtige Möglichkeit zur Reduzierung des CO2-Ausstoßes ist die Nutzung von Solarenergie zur Stromerzeugung. Durch den Einsatz von Solaranlagen auf Dächern von Wohnhäusern und Gebäuden sowie in großen Freiflächenanlagen kann eine beträchtliche Menge an CO2 eingespart werden. Es gibt auch die Möglichkeit der Nutzung von Solarthermie, welche dazu dient Wärmeenergie durch die Nutzung von Solarenergie zu erzeugen.
 
-![Nein zu CO2](https://user-images.githubusercontent.com/122641002/212973458-93b134b3-5010-4724-8a3e-260ca7e9b25b.png)
+<img>![Nein zu CO2](https://user-images.githubusercontent.com/122641002/213714328-467f905f-716d-4c44-8883-54d11a91c84c.png)
 
 
 ## Solaranlagen - Ihre persönliche Energieversorgung
