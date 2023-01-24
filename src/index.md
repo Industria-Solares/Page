@@ -12,11 +12,6 @@ description: "Home"
 
 ## Solarenergie - der Weg in eine CO2-neutrale Zukunft
 
-Der Ausstoß von CO2 ist eines der größten Umweltprobleme, mit denen die Welt heute konfrontiert ist. Eine wichtige Quelle für CO2-Emissionen ist die Erzeugung von Strom aus fossilen Brennstoffen wie Kohle, Öl und Gas. Eine Lösung für dieses Problem ist die Umstellung auf erneuerbare Energien, wie zum Beispiel Solarenergie.
-
-Solarenergie ist eine saubere und unerschöpfliche Energiequelle, die aus der Kraft der Sonnenstrahlung gewonnen wird. Sie hat keine Emissionen und trägt somit nicht zum Klimawandel bei. In den letzten Jahren hat sich die Technologie für Solarenergie stark verbessert und die Kosten für die Installation von Solaranlagen sind gesunken.
-
-Eine wichtige Möglichkeit zur Reduzierung des CO2-Ausstoßes ist die Nutzung von Solarenergie zur Stromerzeugung. Durch den Einsatz von Solaranlagen auf Dächern von Wohnhäusern und Gebäuden, sowie in großen Freiflächenanlagen, kann eine erhebliche Menge an CO2 eingespart werden. Es gibt auch die Möglichkeit der Nutzung von Solarthermie, welche dazu dient Wärmeenergie durch die Nutzung von Solarenergie zu erzeugen.
 
 Der Ausstoß von CO2 ist eines der größten Umweltprobleme, mit denen die Welt heute konfrontiert ist. Eine wichtige Quelle für CO2-Emissionen ist die Erzeugung von Strom aus fossilen Brennstoffen wie Kohle, Öl und Gas. Eine Lösung für dieses Problem ist die Umstellung auf erneuerbare Energien, wie zum Beispiel Solarenergie. Solarenergie ist eine saubere und unerschöpfliche Energiequelle, die aus der Kraft der Sonnenstrahlung gewonnen wird. Sie hat keine direkten Emissionen und trägt somit nicht zum Klimawandel bei.
 
